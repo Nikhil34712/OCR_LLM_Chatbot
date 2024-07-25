@@ -1,5 +1,14 @@
 package com.example.ocr_phi
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+
 class ChatAdapter(private val messages: List<ChatMessage>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val VIEW_TYPE_USER = 1
     private val VIEW_TYPE_ASSISTANT = 2
