@@ -398,7 +398,7 @@ class MainActivity : AppCompatActivity() {
             val mark1 = timeSource.markNow()
 
             val systemPrompt = if (ocrText.isNotEmpty()) {
-                "Return the following input in JSON format. Make each word a key with an empty string value. Input:\n"
+                "Return the following input in JSON format where the first word is a key, the second word is its value, the third word is a key value. Input:\n"
             } else {
                 "You are a helpful assistant. Respond to the user's query."
             }
